@@ -1,0 +1,81 @@
+#main
+{
+    height: 88vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    grid-gap: 4rem
+}
+
+form
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1rem
+}
+
+input
+{
+    padding: 10px 20px;
+    border-radius: 2px;
+    border: none;
+    height: 7vh;
+    width: 50vh
+}
+
+button
+{
+    font-size: 24px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: rgb(53, 117, 96);
+    color: white;
+    transition: all 0.5s
+}
+
+button:hover
+{
+    background-color: rgb(83, 156, 132)
+}
+
+input[type="checkbox"]
+{
+    width: 20px
+}
+
+#innerDiv
+{
+    text-align: left;
+    display: flex;
+    align-items: center;
+    grid-gap: 0.5rem
+}
+
+span a, p a
+{
+    color: rgb(53, 117, 96);
+    text-decoration:none
+}
+
+p
+{
+    font-size: 26px;
+    color: darkred    
+}
+
+p a
+{
+    font-size: 26px;
+    color: darkred; 
+    text-decoration:none
+}
+
+p a:hover
+{
+    color: rgb(211, 101, 101)
+}

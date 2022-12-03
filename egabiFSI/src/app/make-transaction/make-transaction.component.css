@@ -1,0 +1,56 @@
+div
+{
+    padding: 50px 80px;
+    height: 88vh;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    grid-gap: 5rem
+}
+
+form
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1rem
+}
+
+input, select
+{
+    padding: 10px 20px;
+    border-radius: 2px;
+    border: none;
+    height: 7vh;
+    width: 100%
+}
+
+button
+{
+    font-size: 24px;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: rgb(53, 117, 96);
+    color: white;
+    transition: all 0.5s
+}
+
+button:hover
+{
+    background-color: rgb(83, 156, 132)
+}
+
+label
+{
+    text-align: left;
+    font-size: 22px
+}
+
+p
+{
+    font-size: 26px;
+    color: darkred
+}

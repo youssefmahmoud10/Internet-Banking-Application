@@ -1,0 +1,25 @@
+nav
+{
+    background-color:transparent;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+    grid-gap: 4rem;
+    padding-left:5rem
+}
+
+a
+{
+    font-weight: bold;
+    color:rgb(43, 43, 43);
+    text-underline-offset: 15px;
+    text-decoration-color:transparent;
+    transition: all 0.5s
+}
+
+a:hover
+{
+    color: rgb(53, 117, 96);
+    text-decoration-color: rgb(53, 117, 96)
+}

@@ -1,0 +1,24 @@
+
+#outerContainer
+{
+    background-image: url("src\assets\BackGround2.jpg");
+}
+
+
+
+#innerContainer
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#sideBar
+{
+    background-color: rgb(53, 117, 96);
+}
+
+#personInformationBody
+{
+    width: 100%;
+}

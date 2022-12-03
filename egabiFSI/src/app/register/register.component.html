@@ -1,0 +1,16 @@
+<div id="main">
+    <h1>CREATE ACCOUNT</h1>
+    <form>
+        <input type="text" name="accountNumber" [(ngModel)]="accountNumber" placeholder="Account number">
+        <input type="password" name="password" [(ngModel)]="password" placeholder="Password">
+        <div id="innerDiv">
+            <input type="checkbox">
+            <label>I agree all statements in service</label>
+        </div>
+        <button (click)="register()">Sign up</button>
+        <p *ngIf="alreadyRegistered">You already have registered</p>
+        <p *ngIf="successfulRegistration"><a routerLink="/all-login">Registered successfully<br>Click now to login</a></p>
+        <p *ngIf="accountNotFound">Account doesn't exist in the bank</p>
+        <span>Have an account?<a routerLink="/all-login"> LOGIN</a></span>
+    </form>
+</div>

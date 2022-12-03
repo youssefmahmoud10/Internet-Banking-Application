@@ -1,0 +1,14 @@
+<div>
+    <h1>LOG IN</h1>
+    <form>
+        <input type="text" name="accountNumber" [(ngModel)]="accountNumber" placeholder="Account number">
+        <input type="password" name="password" [(ngModel)]="password" placeholder="Password">
+        <button (click)="login()">Login</button>
+        <a routerLink="/all-login" id="forgetPassword">Forgot your password?</a>
+        <p *ngIf="registerFirst">You need to register first</p>
+        <p *ngIf="wrongPassword">Wrong password</p>
+        <p *ngIf="accountNotFound">Account doesn't exist in the bank</p>
+        <span>Don't have an account?</span>
+        <button><a routerLink="/all-register">Create new account</a></button>
+    </form>
+</div>

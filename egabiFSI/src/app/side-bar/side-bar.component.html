@@ -1,0 +1,7 @@
+<div>
+    <ng-container *ngFor="let item of items">
+    <button [routerLink]="[item.link]" (click)="markHovered(item)" [ngClass]="{ 'active': item.isActive }">
+        {{item.title}}
+    </button>
+    </ng-container>
+</div>

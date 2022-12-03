@@ -1,0 +1,18 @@
+<div id="container">
+    <div *ngIf="isLoaded && profile"id="welcome">
+        <h2>Hi {{profile.name}}</h2>
+        <h1>Good morning</h1>
+    </div>
+    <div id="balance" *ngIf="isLoaded && profile">
+        <h2>Current balance</h2>
+        <h1>{{profile.balance}}</h1>
+    </div>
+    <div id="personal-data"><h1>Transactions information</h1></div>
+    <div *ngFor="let transaction of transactions" id="personal-data">
+        <h2><span>Transaction ID:</span> {{transaction.transactionId}}</h2>
+        <h2><span>Amount:</span> {{transaction.amount}}</h2>
+        <h2><span>Date:</span> {{transaction.date}}</h2>
+        <h2><span>Transaction type:</span> {{transaction.transactionType}}</h2>
+        <h2><span>Receiver:</span> {{transaction.receiver}}</h2>
+    </div>
+</div>

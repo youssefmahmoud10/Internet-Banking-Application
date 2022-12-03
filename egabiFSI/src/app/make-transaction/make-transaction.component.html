@@ -1,0 +1,19 @@
+<div>
+    <form>
+        <label>Enter amount</label>
+        <input type="text" name="amount" [(ngModel)]="amount">
+        <label>Enter transaction type</label>
+        <select name="transactionType" [(ngModel)]="transactionType">
+            <option value="payment">Payment</option>
+            <option value="transfer_to">Transfer</option>
+        </select>
+        <label>Enter recevier</label>
+        <input type="text" name="receiver" [(ngModel)]="receiver">
+        <button (click)="makeTransaction()">Pay</button>
+        <p *ngIf="successPayment">Successful payment</p>
+        <p *ngIf="successTransfer">Successful transfer</p>
+        <p *ngIf="accountNotFound">Receiver account doesn't exist in the bank</p>
+        <p *ngIf="noBalance">No balance enough</p>
+    </form>
+</div>
+

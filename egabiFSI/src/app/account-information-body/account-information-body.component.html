@@ -1,0 +1,17 @@
+<div id="container">
+    <div *ngIf="isLoaded && profile"id="welcome">
+        <h2>Hi {{profile.name}}</h2>
+        <h1>Good morning</h1>
+    </div>
+    <div id="balance" *ngIf="isLoaded && profile">
+        <h2>Current balance</h2>
+        <h1>{{profile.balance}}</h1>
+    </div>
+    <div id="account-data" *ngIf="isLoaded && account">
+        <h1>Account information</h1><br><br>
+        <h2><span>Account number:</span> {{account.accountNumber}}</h2>
+        <h2><span>Currency:</span> {{account.currency}}</h2>
+        <h2><span>Type:</span> {{account.type}}</h2>
+        <h2><span>Owner:</span> {{account.userNid}}</h2>
+    </div>
+</div>

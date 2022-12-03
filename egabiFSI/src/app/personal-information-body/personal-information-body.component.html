@@ -1,0 +1,21 @@
+<div id="container">
+    <div *ngIf="isLoaded && profile"id="welcome">
+        <h2>Hi {{profile.name}}</h2>
+        <h1>Good morning</h1>
+    </div>
+    <div id="balance" *ngIf="isLoaded && profile">
+        <h2>Current balance</h2>
+        <h1>{{profile.balance}}</h1>
+    </div>
+    <div id="personal-data" *ngIf="isLoaded && user">
+        <h1>Personal information</h1><br><br>
+        <h2><span>National ID:</span> {{user.nid}}</h2>
+        <h2><span>Name:</span> {{user.name}}</h2>
+        <h2><span>Birth date:</span> {{user.birthDate}}</h2>
+        <h2><span>Address:</span> {{user.address}}</h2>
+        <h2><span>Marital status:</span> {{user.maritalStatus}}</h2>
+        <h2><span>Mobile number:</span> {{user.mobileNumber}}</h2>
+        <h2><span>Email:</span> {{user.email}}</h2>
+        <h2><span>Nationality:</span> {{user.nationality}}</h2>
+    </div>
+</div>

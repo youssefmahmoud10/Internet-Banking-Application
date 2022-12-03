@@ -1,0 +1,37 @@
+div
+{
+    padding-left:6rem;
+    padding-top:5rem
+}
+
+h1
+{
+    font-size: 88px;
+    color: rgb(43, 43, 43);
+    margin-bottom: 50px
+}
+
+button
+{
+    font-size: 24px;
+    padding: 10px;
+    width: 12rem;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 20px;
+    background-color: rgb(53, 117, 96);
+    color: white;
+    transition: all 0.5s
+}
+
+button:hover
+{
+    background-color: rgb(83, 156, 132) 
+}
+
+a
+{
+    color: white;
+    text-decoration:none
+}
